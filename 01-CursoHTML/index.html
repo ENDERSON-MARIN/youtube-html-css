@@ -4,14 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Etiquetas para SEO -->
   <!-- title - entre 55 y 65 caracteres -->
   <title>Aprendiendo HTML</title>
   <!-- description - no más de 165 caracteres -->
   <meta name="description" content="En esta página estamos aprendiendo lo fundamentos de HTML con @jonmircha">
-  <link rel="canonical" href="http://tudominio.com/la-url-canonica">
-  <link rel="icon" href="img/favicon.png">
-  <link rel="apple-touch-icon" href="img/favicon.png">
-  <meta name="theme-color" content="#FF6600">
+  <link rel="canonical" href="http://tudominio.com/la-url-canonica"><!-- la URL canonica es la url original de mayor impoprtancia del sitio -->
+  <link rel="icon" href="img/favicon.png"><!-- dispositivos de escritorio -->
+  <link rel="apple-touch-icon" href="img/favicon.png"><!-- dispositivos móviles -->
+  <meta name="theme-color" content="#FF6600"><!-- color de thema para dispositivos móviles -->
+  <!-- Etiquetas para Redes Sociales -->
+  <!-- protocolo open graf, para que muestre  -->
   <meta property="og:title" content="Aprendiendo HTML">
   <meta property="og:description" content="En esta página estamos aprendiendo lo fundamentos de HTML con @jonmircha">
   <meta property="og:image" content="https://tudominio.com/img/periodic-table-of-html-elements.png">
@@ -611,7 +614,7 @@
   <h4>Selects, Radios y Checkbox</h4>
   <form>
     <p>Elige tu idioma:</p>
-    <select name="idioma" required>
+    <select name="idioma" required><!-- con el atributo multiple sirve para seleccionar varias opciones  -->
       <option value="" selected>Elige una opción</option>
       <option value="es">Español</option>
       <option value="en">Inglés</option>
@@ -619,7 +622,7 @@
       <option value="it">Italiano</option>
       <option value="pt">Portugués</option>
     </select>
-    <p>Elige tu lenguaje de programación favorito:</p>
+    <p>Elige tu lenguaje de programación favorito:</p><!-- deben tener el mismo name para seleccionar una sola opcion, checked para la opcion por defecto -->
     <input type="radio" name="lenguaje" id="radio-js" value="js" required>
     <label for="radio-js">JavaScript</label>
     <input type="radio" name="lenguaje" id="radio-py" value="py" checked>
@@ -656,7 +659,7 @@
     <input type="submit">
     <input type="reset">
   </form>
-  <h4>Formulario de Contacto</h4>
+  <h4>Formulario de Contacto</h4><!-- el atributo pattern es para escribir expresiones regulares para indicar el formato que acepta el campo, el title es lo que va a informar al usuario -->
   <!-- https://formsubmit.co/ -->
   <form action="https://formsubmit.co/your@email.com" method="POST">
     <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
